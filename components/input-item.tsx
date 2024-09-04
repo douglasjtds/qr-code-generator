@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Input } from './ui/input';
 import QrCodeDialogItem from './qrcode-dialog-item';
 
-let qrCodeValue: string;
+let qrCodeValue: string = "";
 
 const formSchema = z.object({
   title: z.string().trim().min(1, {
