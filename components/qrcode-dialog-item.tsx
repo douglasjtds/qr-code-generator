@@ -6,14 +6,12 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from './ui/dialog';
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Terminal } from 'lucide-react';
-import { useCallback, useRef } from 'react';
 
 interface QrCodeItemProps {
   qrCodeValue: string;
@@ -53,7 +51,3 @@ const QrCodeDialogItem = ({ qrCodeValue }: QrCodeItemProps) => {
 };
 
 export default QrCodeDialogItem;
-function downloadBlob(blob: Blob, arg1: string) {
-  throw new Error('Function not implemented.');
-}
-
