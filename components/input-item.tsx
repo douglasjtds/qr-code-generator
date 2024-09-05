@@ -24,8 +24,6 @@ const InputItem = () => {
   });
 
   function handleSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     qrCodeValue = values.title;
   }
 
